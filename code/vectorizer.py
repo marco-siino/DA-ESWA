@@ -32,7 +32,7 @@ class Vectorizer:
 
   def __init__(self, train_set):
     # Set a large sequence length to find the longest sample in the training set.
-    sequence_length = 200000
+    sequence_length = 150000
     vectorize_layer = TextVectorization(
         standardize=self.clean_samples,
         output_mode='int',
